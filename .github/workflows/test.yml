@@ -1,0 +1,14 @@
+name: test
+on: [push]
+jobs:
+  test:
+    runs-on: windows-2019
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
+      - run: cd "C:\Python\include" && dir
+      - run: cd "C:\Python" && tree
