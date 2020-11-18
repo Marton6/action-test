@@ -10,4 +10,4 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: '3.8'
-      - run: cd "C:\" && tree
+      - run: cd "C:\hostedtoolcache\windows\Python\3.8.6\x64" && tree
