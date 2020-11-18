@@ -7,9 +7,10 @@ jobs:
       - uses: actions/checkout@v2
         with:
           submodules: true
-      - uses: actions/setup-python@v2
-        with:
-          python-version: '3.8'
+#      - uses: actions/setup-python@v2
+#        with:
+#          python-version: '3.8'
+      - uses: ilammy/msvc-dev-cmd@v1
       - run: cl.exe a.c
 
 # C:\hostedtoolcache\windows\Python\3.8.6\x64\include
