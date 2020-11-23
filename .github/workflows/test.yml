@@ -11,6 +11,6 @@ jobs:
         with:
           python-version: '3.8'
       - uses: ilammy/msvc-dev-cmd@v1
-      - run: cd C:\hostedtoolcache\windows\Python\3.8.6\x64\DLLs && dir
+      - run: cd C:\ && dir /s *python.dll
 
 # C:\hostedtoolcache\windows\Python\3.8.6\x64\include
