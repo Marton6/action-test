@@ -9,7 +9,7 @@ jobs:
       - uses: ilammy/msvc-dev-cmd@v1
         with: 
           arch: x86
-      - run: i686-w64-mingw32-gcc -m32 main.c
+      - run: x86_64-w64-mingw32-gcc -m32 main.c
       - uses: actions/upload-artifact@v2
         with:
           name: test
