@@ -5,7 +5,7 @@ jobs:
     runs-on: windows-2019
     steps:
       - uses: actions/checkout@v2
-      - run: choco install mingw --x86
+      - run: choco install mingw --x86 --force
       - uses: ilammy/msvc-dev-cmd@v1
       - run: i686-w64-mingw32-gcc -m32 main.c
       - uses: actions/upload-artifact@v2
