@@ -6,7 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: ilammy/msvc-dev-cmd@v1
-      - run: x86_64-w64-mingw32 -m32 main.cpp
+      - run: x86_64-w64-mingw32-gcc -m32 main.c
       - uses: actions/upload-artifact@v2
         with:
           name: test
