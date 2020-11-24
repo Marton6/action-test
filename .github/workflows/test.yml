@@ -4,13 +4,8 @@ jobs:
   test:
     runs-on: windows-2019
     steps:
-      - uses: actions/checkout@v2
-        with:
-          submodules: true
-      - uses: actions/setup-python@v2
-        with:
-          python-version: '3.8'
       - uses: ilammy/msvc-dev-cmd@v1
-      - run: dlltool --help
+      - run: cd C:/ProgramData/Chocolatey/lib/mingw/tools/install/mingw64 && dir
+      - run: cd C:/ProgramData/Chocolatey/lib/mingw/tools/install/mingw64 && tree
 
 # C:\hostedtoolcache\windows\Python\3.8.6\x64\include
