@@ -4,8 +4,12 @@ jobs:
   test:
     runs-on: windows-2019
     steps:
+      - uses: actions/checkout@v2
       - uses: ilammy/msvc-dev-cmd@v1
-      - run: cd C:/ProgramData/Chocolatey/lib/mingw/tools/install/mingw64 && dir
-      - run: cd C:/ProgramData/Chocolatey/lib/mingw/tools/install/mingw64 && tree
+      - run: x86_64-w64-mingw32 -m32 main.cpp
+      - uses: actions/upload-artifact@v2
+        with:
+          name: test
+          path: .
 
 # C:\hostedtoolcache\windows\Python\3.8.6\x64\include
