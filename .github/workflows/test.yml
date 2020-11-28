@@ -2,17 +2,11 @@ name: test
 on: [push]
 jobs:
   test:
-    runs-on: windows-2019
+    runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v2
-      - run: choco install mingw --x86 --force
-      - uses: ilammy/msvc-dev-cmd@v1
-        with: 
-          arch: x86
-      - run: i686-w64-mingw32-gcc main.c
-      - uses: actions/upload-artifact@v2
+      - uses: actions/setup-python@v2
         with:
-          name: test
-          path: .
+          python-version: '3.9'
+      - run: locate Python.h
 
 # C:\hostedtoolcache\windows\Python\3.8.6\x64\include
