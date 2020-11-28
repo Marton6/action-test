@@ -7,7 +7,7 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: '3.9'
-      - run: apt install locate
+      - run: sudo apt update && sudo apt install locate
       - run: locate Python.h
 
 # C:\hostedtoolcache\windows\Python\3.8.6\x64\include
