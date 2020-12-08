@@ -4,8 +4,8 @@ jobs:
   test:
     runs-on: windows-2019
     steps:
-      - run: cd C:\ && dir
-      - run: cd C:\swig && dir
+      - run: mkdir test
+      - run: dir
 
 
 # C:\hostedtoolcache\windows\Python\3.8.6\x64\include
