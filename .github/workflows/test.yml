@@ -2,11 +2,10 @@ name: test
 on: [push]
 jobs:
   test:
-    runs-on: ubuntu-20.04
+    runs-on: windows-2019
     steps:
-      - uses: actions/setup-python@v2
-        with:
-          python-version: '3.9'
-      - run: ls /opt/hostedtoolcache/Python/3.9.0/x64/include/python3.9
+      - run: cd C:\hostedtoolcache\ && dir
+      - run: cd C:\hostedtoolcache\swig && dir
+
 
 # C:\hostedtoolcache\windows\Python\3.8.6\x64\include
