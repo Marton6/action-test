@@ -4,8 +4,8 @@ jobs:
   test:
     runs-on: windows-2019
     steps:
-      - run: mkdir test
-      - run: dir
+      - run: cd C:\dev\vcpkg && dir
+      - run: cd C:\dev\vcpkg\installed\x64-windows\bin && dir
 
 
 # C:\hostedtoolcache\windows\Python\3.8.6\x64\include
