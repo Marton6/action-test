@@ -4,6 +4,7 @@ jobs:
   test:
     runs-on: windows-2019
     steps:
+      - run: cd C:\ && dir
       - run: cd C:\dev\vcpkg && dir
       - run: cd C:\dev\vcpkg\installed\x64-windows\bin && dir
 
