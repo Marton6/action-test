@@ -4,7 +4,7 @@ jobs:
   test:
     runs-on: windows-2019
     steps:
-      - run: cd C:\System32 && dir
+      - run: cd C:\Windows\System32 && dir
 
 
 # C:\hostedtoolcache\windows\Python\3.8.6\x64\include
