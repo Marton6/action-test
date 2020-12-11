@@ -4,7 +4,11 @@ jobs:
   test:
     runs-on: windows-2019
     steps:
-      - run: cd C:\Windows\SysWOW64\ && dir
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
+      - run: rm -rf -v (test)
+        shell: bash
 
 
 # C:\hostedtoolcache\windows\Python\3.8.6\x64\include
