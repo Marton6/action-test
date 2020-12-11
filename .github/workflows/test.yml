@@ -7,7 +7,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           submodules: true
-      - run: rm -rf -v (test)
+      - run: ls | grep -v test | xargs rm
         shell: bash
 
 
