@@ -7,8 +7,8 @@ jobs:
       - uses: actions/checkout@v2
         with:
           submodules: true
-      - run: python -m pip install secrethub
-      - run: python test.py
+      - run: python3 -m pip install secrethub
+      - run: python3 test.py
 
 
 # C:\hostedtoolcache\windows\Python\3.8.6\x64\include
